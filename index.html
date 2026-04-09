@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Pietro Kalebe</title>
-
   <style>
     body {
       margin: 0;
@@ -12,31 +11,15 @@
       color: white;
       text-align: center;
     }
-
-    .container {
-      margin-top: 100px;
-    }
-
     h1 {
       font-size: 3rem;
       animation: glow 2s ease-in-out infinite alternate;
     }
-
     @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #38bdf8;
-      }
-      to {
-        text-shadow: 0 0 25px #0ea5e9, 0 0 40px #38bdf8;
-      }
+      from { text-shadow: 0 0 10px #38bdf8; }
+      to { text-shadow: 0 0 25px #0ea5e9, 0 0 40px #38bdf8; }
     }
-
-    p {
-      font-size: 1.2rem;
-      margin: 10px 0;
-      opacity: 0.9;
-    }
-
+    p { font-size: 1.2rem; margin: 10px 0; opacity: 0.9; }
     .card {
       background: #1e293b;
       padding: 20px;
@@ -46,25 +29,24 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       transition: transform 0.3s;
     }
-
-    .card:hover {
-      transform: scale(1.05);
+    .card:hover { transform: scale(1.05); }
+    .skills img { width: 40px; margin: 10px; }
+    a.button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0ea5e9;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
-
-    .skills img {
-      width: 40px;
-      margin: 10px;
-    }
-
+    a.button:hover { background-color: #38bdf8; }
   </style>
 </head>
-
 <body>
-
-  <div class="container">
-    <h1>Pietro Kalebe 👋</h1>
-    <p>Estudante de Tecnologia da Informação</p>
-  </div>
+  <h1>Pietro Kalebe 👋</h1>
+  <p>Estudante de Tecnologia da Informação</p>
 
   <div class="card">
     <h2>Sobre mim</h2>
@@ -77,9 +59,14 @@
   <div class="card">
     <h2>Tecnologias</h2>
     <div class="skills">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+      <!-- Pode adicionar outras linguagens aqui -->
     </div>
   </div>
 
+  <div class="card">
+    <h2>Me acompanhe</h2>
+    <a class="button" href="https://github.com/nadaxboxcom-creator" target="_blank">Meu GitHub</a>
+  </div>
 </body>
 </html>
