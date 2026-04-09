@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pietro Kalebe</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #38bdf8;
+      }
+      to {
+        text-shadow: 0 0 25px #0ea5e9, 0 0 40px #38bdf8;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      opacity: 0.9;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      margin: 30px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .skills img {
+      width: 40px;
+      margin: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Pietro Kalebe 👋</h1>
+    <p>Estudante de Tecnologia da Informação</p>
+  </div>
+
+  <div class="card">
+    <h2>Sobre mim</h2>
+    <p>🚀 Apaixonado por tecnologia</p>
+    <p>📚 Sempre aprendendo coisas novas</p>
+    <p>🛠️ Focado em desenvolvimento de software</p>
+    <p>🌱 Evoluindo todos os dias</p>
+  </div>
+
+  <div class="card">
+    <h2>Tecnologias</h2>
+    <div class="skills">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+    </div>
+  </div>
+
+</body>
+</html>
